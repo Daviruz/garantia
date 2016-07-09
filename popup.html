@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ Muestra una pantalla donde pide los datos a llenar.
+ -->
+<html lang="es">
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <meta name="charset" content="utf8">
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <style>
+      body{
+        width: 200px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="campos">
+      <form class="form-inline">
+          <div class="form-group">
+              <p><b>Cuil del director/a.</b></p>
+              <input type="text" id="cuil_codigo" size="2"></input>
+              <input type="text" id="cuil_dni" size="8"></input>
+              <input type="text" id="cuil_digito" size="1"></input>
+          </div>
+          <div class="form-group">
+              <p><b>Telefono de la escuela.</b></p>
+              <input type="text" id="tel_codigo" size="3"></input>
+              <input type="text" id="tel_prefijo" size="3"></input>
+              <input type="text" id="tel_numero" size="3"></input>
+              <label>correo del referente.</label>
+              <input type="email" id="mail_ref1" value=""></input>
+          </div>
+          <div class="form-group">
+              <p><b>Datos del referente:</b></p>
+              <label>Telefono o celular</label>
+              <input type="text" id="tel_ref" value=""></input></br>
+              <label>correo</label>
+              <input type="text" id="mail_ref2" value=""></input></br>
+              <label>Disponibilidad</label>
+              <input type="text" id="disp_ref" value=""></input></br>
+          </div>
+          <button type="button" name="button" class="btn btn-default" id="guardar">Guardar</button>
+      </form>
+    </div>
+    <script src="Garantia.js"></script>
+  </body>
+</html>
